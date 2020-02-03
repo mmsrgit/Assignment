@@ -41,7 +41,7 @@ object SparkKinesisIntegration extends App {
     .option("streamName", "<streamName>")
     .option("endpointUrl", "<uri>")
     .option("initialPositionInStream", "earliest")
-    .option("format", "csv").schema("")
+    .option("format", "csv")
     .schema(userSchema)
     .load
 
