@@ -82,5 +82,7 @@ object SparkKinesisIntegration extends App {
     JSONObject(m).toString()
   }
 
+  ssc.awaitTermination()
+
 }
 
